@@ -26,7 +26,7 @@ batch_labels = [
 
     ]
 # Load the model
-model = CrossEncoderModel("sabdou/cross-encoder-model", max_num_labels=6)
+model = CrossEncoderModel("sabdou/poly-encoder-model", max_num_labels=6)
 # Prediction with JSON output
 predictions = model.forward_predict(texts, batch_labels)
 print("Predictions:", predictions)
